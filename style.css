@@ -1,0 +1,127 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Background */
+body {
+  background: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d ") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.site-header {
+  background: white;   /* white background */
+  color: #333;         /* dark text */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #ddd; /* light border for separation */
+}
+
+.site-header .logo {
+  height: 35px;  
+  margin-right: 12px;
+}
+
+.site-header h1 {
+  font-size: 18px;
+  color: #0073e6;  /* BTS blue highlight */
+}
+
+/* Footer */
+footer {
+  background: white;   /* white background */
+  color: #333;         /* dark text */
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  border-top: 2px solid #ddd; /* light border for separation */
+}
+
+/* Form Box */
+main {
+  flex: 1; /* pushes footer down */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 320px; /* smaller box */
+  background: rgba(255, 255, 255, 0.95);
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+label {
+  display: block;
+  margin: 8px 0 4px;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #005bb5;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.918);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 480px) {
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .site-header h1 {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .form-container {
+    max-width: 90%; /* take most of the screen */
+  }
+}
